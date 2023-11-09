@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tech Blog Homepage</title>
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+  <div class="">
+    <header class="">
+      <nav>
+        <!-- Conditionally render login or logout links -->
+        <a href="/">homepage</a>
+        {{#if logged_in}}
+        <a href="/dashboard">dashboard</a> |
+        <button class="no-button" id="logout">logout</button>
+        {{else}}
+        <a href="/sign-in">sign in</a>
+        <a href="sign-up">sign up</a>
+        {{/if}}
+      </nav>
+      <h1>
+       The Tech Blog
+      </h1>
+    </header>
+    <main class="">
+      <!-- Render the sub layout -->
+      {{{ body }}}
+    </main>
+    <footer>
+      
+    </footer>
+  </div>
