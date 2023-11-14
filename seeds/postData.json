@@ -1,0 +1,20 @@
+[
+    {
+        "title": "What is json?",
+        "body": "JSON stands for Javascript Object Notation. It is used to send objects to and from the browser and other applications for use",
+        "user_id": 1,
+        "date": "2023-08-26"
+    },
+    {
+        "title": "How do you install node packages?",
+        "body": "The command used is (npm install)",
+        "user_id": 2,
+        "date": "2022-12-14"
+    },
+    {
+        "title": ".env - A way to securely store database sensitive information",
+        "body": ".env is a file that along with the node package, you can store sensitive information in to protect it from malicious use",
+        "user_id": 2,
+        "date": "2023-10-26"
+    }
+]

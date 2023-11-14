@@ -1,4 +1,12 @@
 {
+  "name": "tech-blog-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts:": {
+    "start": "node server.js",
+    "seed": "node seeds/seed.js"
+  },
   "dependencies": {
     "bcrypt": "^5.1.1",
     "connect-session-sequelize": "^7.1.7",
@@ -7,5 +15,12 @@
     "express-session": "^1.17.3",
     "mysql2": "^3.6.3",
     "sequelize": "^6.34.0"
-  }
+  },
+  "scripts": {
+    "start": "node server.js",
+    "seed": "node seeds/seed.js"
+  },
+  "devDependencies": {},
+  "author": "ammann64",
+  "license": "ISC"
 }

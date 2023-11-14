@@ -19,12 +19,12 @@ Post.init(
             type: DataTypes.STRING,
             allowNull: false
         },
-        userID: {
+        user_id: {
             type: DataTypes.INTEGER,
             allowNull: false
         },
-        postDate: {
-            type: DataTypes.DATE,
+        date: {
+            type: DataTypes.DATEONLY,
             allowNull: false
         }
     },

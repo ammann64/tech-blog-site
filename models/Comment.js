@@ -23,7 +23,7 @@ Comment.init(
             type: DataTypes.INTEGER,
             allowNull: false,
         },
-        date_created: {
+        date: {
             type: DataTypes.DATE,
             allowNull: false
         }
