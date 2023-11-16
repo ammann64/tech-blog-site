@@ -31,10 +31,10 @@
         {{#each posts as |post|}}
         <div>
             <div>
-                <h4><a href="/post/{{post.id}}">{{post.title}}</a></h4>
+                <h4><a href="/api/post/{{post.id}}">{{post.title}} posted on {{post.date}}</a></h4>
             </div>
             <div>
-            <button class="" data-id="{{project.id}}">UPDATE</button>
+                <button class="" data-id="{{project.id}}">UPDATE</button>
             </div>
             <div>
                 <button class="" data-id="{{project.id}}">DELETE</button>

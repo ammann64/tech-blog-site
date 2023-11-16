@@ -12,7 +12,7 @@ router.get('/', async (req, res) => {
                 },
                 {
                     model: Comment,
-                    attributes: ['content', 'dateCreated']
+                    attributes: ['content', 'date']
                 }
             ]
         });
@@ -29,7 +29,7 @@ router.get('/', async (req, res) => {
     }
 });
 
-router.get('/dashboard', async (req, res) => {
+router.get('/dashboard', withAuth, async (req, res) => {
     try {
      const userData = await User.findByPk(req.session.user_id, {
         attributes: { exclude: ['password'] },
@@ -47,3 +47,5 @@ router.get('/dashboard', async (req, res) => {
      res.status(500).json(err);
     } 
  });
+
+ module.exports = router;

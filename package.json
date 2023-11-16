@@ -10,7 +10,9 @@
   "dependencies": {
     "bcrypt": "^5.1.1",
     "connect-session-sequelize": "^7.1.7",
+    "dayjs": "^1.11.10",
     "dotenv": "^16.3.1",
+    "express": "^4.18.2",
     "express-handlebars": "^7.1.2",
     "express-session": "^1.17.3",
     "mysql2": "^3.6.3",
@@ -20,7 +22,6 @@
     "start": "node server.js",
     "seed": "node seeds/seed.js"
   },
-  "devDependencies": {},
   "author": "ammann64",
   "license": "ISC"
 }
